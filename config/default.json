@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://talat:talat@contact-keeper-byh3h.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtsecret": "sercret"
+}
