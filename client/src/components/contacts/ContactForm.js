@@ -1,8 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 import ContactContext from '../../context/contact/contactContext.js';
-import { UPDATE_CONTACT } from '../../context/types.js';
 
 function ContactForm() {
+  const contactContext = useContext(ContactContext);
   const { addContact, current, clearCurrent, updateContact } = useContext(
     ContactContext
   );
@@ -26,7 +26,7 @@ function ContactForm() {
         type: 'personal'
       });
     }
-  }, [useContext(ContactContext), current]);
+  }, [contactContext, current]);
 
   // on change
   const onChange = (e) =>
